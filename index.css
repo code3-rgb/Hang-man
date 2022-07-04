@@ -1,19 +1,117 @@
-
 * {
     margin: 0;
-    box-sizing: border-box;
 }
+
 
 .container {
-    width: 100%;
-    height: 100vh;
     display: grid;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background: whitesmoke;
 }
 
-#canvas {
-    background: black;
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+}
+
+canvas {
+    border: 2px solid black;
+    width: 700px;
+    height: 500px;
+    background-color: black;
+}
+
+.keyboard {
+    border-left: 2px solid white;
+    width: 700px;
+    height: 500px;
+    align-self: center;
+    background: url(/convict.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.key-box {
     width: 100%;
     height: 500px;
+    display: grid;
+    grid-template-columns: repeat(7,100px);
+    grid-auto-rows: 100px;
+    padding-top: 3rem;
     transition: 0.3s ease-in-out;
 
+
+}
+
+#key {    
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    cursor: pointer;
+    box-shadow: 20px 20px white;
+    transition: 0.3s ease-in-out;
+
+}
+
+.input-box {
+    width: 100%;
+    height: 200px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    background: black;
+    
+}
+
+.input-divs {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: row;
+
+}
+
+.divs {
+    margin: 1em;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background: whitesmoke;
+}
+
+#btn {
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 2rem;
+    background: black;
+    color: white;
+}
+
+#click {
+    outline: 4px solid orange;
+}
+
+#clicked {
+    background: grey;
+    color: black;
+}
+#wrong {
+    color: red;
 }
