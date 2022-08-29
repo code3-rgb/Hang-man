@@ -1,6 +1,6 @@
 ## Save The Man . Before it is too Late
 
-![Hangman Game Screenshot](./convict.png "Minesweeper Game Screenshot")
+![Hangman Game Screenshot](./convict.jpg "Minesweeper Game Screenshot")
 
 ## Playing Hangman
 
